@@ -16,29 +16,34 @@ font-family: ‘PT Sans Narrow’, sans-serif;
 body {
   margin: 0;
 }
+
 img {
   width: 100%;
   display: block;
 }
+
 header {
   display: grid;
   grid-template-columns: auto 10em auto;
   grid-template-rows: auto 1.5rem;
   grid-template-areas:
     “left center right”
-    “.    center    .“;
+    “. center .“;
   margin-bottom: 1.5rem;
 }
+
 header h1 {
   grid-area: center;
   margin: 0;
   z-index: 0;
 }
+
 nav {
   background-color: #BD027D;
   grid-column: 1 / -1;
   grid-row: 1;
 }
+
 nav ul {
   list-style-type: none;
   margin: 0 1rem;
@@ -48,6 +53,7 @@ nav ul {
   align-items: center;
   height: 100%;
 }
+
 nav a {
   padding: .5em .8em;
   background-color: #BD027D;
@@ -60,25 +66,31 @@ nav a {
   font-weight: bold;
   font-size: 1.125rem;
 }
+
 nav a:hover {
   background-color: #960062;
 }
+
 main {
   padding: 0 1rem;
 }
+
 main p {
   font-size: 1.125rem;
   margin: 0 0 1.5rem;
 }
+
 section {
   padding: 1.5rem 0;
   border-bottom: 2px solid #AFAFAF;
   border-top: 2px solid #AFAFAF;
 }
+
 h2 {
   margin: 0 0 1.5rem;
   font-family: “PT Sans Narrow”, sans-serif;
 }
+
 section ul {
   list-style-type: none;
   margin: 0;
@@ -87,6 +99,7 @@ section ul {
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
 }
+
 section ul li {
   background-color: #ccc;
   border: 2px solid #AFAFAF;
@@ -98,6 +111,7 @@ section ul li {
     “middle”
     “bottom”;
 }
+
 section h3 {
   grid-area: bottom;
   z-index: 1;
@@ -107,10 +121,12 @@ section h3 {
   background-color: rgba(0, 0, 0, .1);
   padding: 1rem 0;
 }
+
 section li > img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
+
 section div {
   grid-area: top;
   display: flex;
@@ -123,14 +139,17 @@ section div {
   margin: .5em 0 0;
   font-style: italic;
 }
+
 section div img {
   width: 1em;
   height: 1em;
   margin-right: .5rem;
 }
+
 section div strong {
   font-weight: normal;
 }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -138,6 +157,7 @@ footer {
   font-size: .875rem;
   align-items: center;
 }
+
 footer a {
   color: #000;
 }
